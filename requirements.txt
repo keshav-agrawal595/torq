@@ -2,5 +2,4 @@ streamlit
 pandas
 pysqlite3-binary
 mysql-connector
-os
 matplotlib
