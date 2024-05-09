@@ -3,3 +3,4 @@ pandas
 pysqlite3-binary
 mysql-connector
 matplotlib
+google-generativeai
