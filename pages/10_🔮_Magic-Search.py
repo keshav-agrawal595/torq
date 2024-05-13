@@ -6,13 +6,14 @@ import database_ware as dbb
 import matplotlib.pyplot as plt
 from helperSqllte import *
 from helper import *
+from dotenv import load_dotenv
+load_dotenv()
 
 import google.generativeai as genai
 ## Configure Genai Key
 
-GOOGLE_API_KEY="AIzaSyBBtfQwbpTQZJ37xRMcLlyMRuycys0Gxlk"
-
-genai.configure(api_key=GOOGLE_API_KEY)
+os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 st.set_page_config(
     page_title='Magic-Search', 
